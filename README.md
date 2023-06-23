@@ -1,2 +1,2 @@
 # personal-cloud
-Project to store data on the personal server set up be the user.
+Project to store data on the personal server set up by the user.
