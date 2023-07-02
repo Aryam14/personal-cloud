@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    color: white;
+    width: 380px;
+    background-color: rgba(255, 255, 255, 0.137);
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name input {
+    width: 48%;
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+input [type='checkbox'] {
+    accent-color: rgb(5,211,183);
+    width: 15px;
+    height: 15px;
+}
+
+.terms {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    align-items: center;
+}
+
+.terms a {
+    color: rgb(5, 211, 210);
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    margin: 12px 0;
+    background-color: #002D62;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+button:active {
+    outline: 5px solid rgba(85, 92, 99, 0.445);
+}
+h2 {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
