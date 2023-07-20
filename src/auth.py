@@ -72,7 +72,7 @@ def login():
             session.clear()
             session['user_id'] = user['id']
             # return redirect(url_for('store.index'))
-            return redirect(url_for('store.download_data'))
+            return redirect(url_for('store.index'))
         
         flash(error)
     

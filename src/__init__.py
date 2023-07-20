@@ -1,13 +1,13 @@
 import os
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 
 # application factory function
 def create_app(test_config=None):    
     app = Flask(__name__, instance_relative_config=True, template_folder='templates')
     app.config.from_mapping(
         SECRET_KEY = 'dev',
-        UPLOAD_FOLDER = '/home/user/personal-cloud/src/uploads',
+        UPLOAD_FOLDER = '/home/ubuntu/Desktop/mp/personal-cloud/src/uploads',
         # points where the db file will be saveed.
         DATABASE = os.path.join(app.instance_path, 'src.sqlite'),
     )
@@ -18,11 +18,11 @@ def create_app(test_config=None):
     # else:
     #     app.config.from_mapping(test_config)
 
-    # # creates the instance folder
-    # try:
-    #     os.makedirs(app.instance_path)
-    # except OSError:
-    #     pass
+    # creates the instance folder
+    try:
+        os.makedirs(app.instance_path)
+    except OSError:
+        pass
 
     @app.route('/hello')
     def hello():
