@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    border-color: #4158d0;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    padding: 0 0 15px 0;
+}
+
+.container {
+    background-color: white;
+    width: 360px;
+    text-align: center;
+    padding: 25px 20px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+}
+
+.container:hover {
+    transition: 0.3s;
+    box-shadow: 5px 5px 50px rgba(128, 128, 128, .98);
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin: 8px 0px;
+    outline: none;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+button {
+    width: 100%;
+    padding: 8px 0;
+    margin: 12px 0;
+    background-color: #47a1e9;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #298bdb;
+}
+
+button:active {
+    outline: 5px solid rgba(85, 92, 99, 0.445);
+}
+
+p {
+    text-align: center;
+    padding: 0 5px;
+    color: grey;
+    margin: 3px 0;
+}
+
+header h1 {
+    width: 100%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 600;
+    background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
