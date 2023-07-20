@@ -38,7 +38,7 @@ def register():
                 db.commit()
                 # make a new directory for the new user
                 dirname = os.path.join(current_app.config['UPLOAD_FOLDER'], username)
-                os.makedir(dirname)
+                os.makedirs(dirname)
             except db.IntegrityError:
                 error = f"User {username} is already registered."
             else:
@@ -47,6 +47,7 @@ def register():
         flash(error)
 
     return render_template('auth/register.html')
+    # return render_template('auth/signup/form.html')
 
 @bp.route('/login', methods=('GET', 'POST'))
 def login():
@@ -70,7 +71,8 @@ def login():
             # and the browser sends it back with subsequent requests.
             session.clear()
             session['user_id'] = user['id']
-            return redirect(url_for('store.index'))
+            # return redirect(url_for('store.index'))
+            return redirect(url_for('store.download_data'))
         
         flash(error)
     

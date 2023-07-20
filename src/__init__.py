@@ -37,5 +37,4 @@ def create_app(test_config=None):
     app.register_blueprint(store.bp)
     app.add_url_rule('/', endpoint='index') # allows index to appear without /blog prefix
 
-    
     return app
