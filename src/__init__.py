@@ -10,6 +10,7 @@ def create_app(test_config=None):
         UPLOAD_FOLDER = '/home/ubuntu/Desktop/mp/personal-cloud/src/uploads',
         # points where the db file will be saveed.
         DATABASE = os.path.join(app.instance_path, 'src.sqlite'),
+        TEMPLATES_AUTO_RELOAD = True
     )
 
     # load the config file (if exstis or )
