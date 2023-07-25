@@ -4,3 +4,5 @@ flask --app src init-db
 flask --app src run
 
 unix:cloud.sock -m 007 "src:create_app()"
+
+nginx conf user is current user (to give persmission)
