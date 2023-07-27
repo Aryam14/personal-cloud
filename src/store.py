@@ -42,7 +42,7 @@ def html_create(directory_data):
     d += f'\n</table>\n </div>\n'
 
     d += f'\n</body>'
-    with open("/home/ubuntu/Desktop/mp/personal-cloud/src/templates/index.html", "w") as file:
+    with open("/home/user/personal-cloud/src/templates/index.html", "w") as file:
         file.write(d)
         file.close()
 

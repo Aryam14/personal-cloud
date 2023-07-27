@@ -7,7 +7,7 @@ def create_app(test_config=None):
     app = Flask(__name__, instance_relative_config=True, template_folder='templates')
     app.config.from_mapping(
         SECRET_KEY = 'dev',
-        UPLOAD_FOLDER = '/home/ubuntu/Desktop/mp/personal-cloud/src/uploads',
+        UPLOAD_FOLDER = '/home/user/personal-cloud/src/uploads',
         # points where the db file will be saveed.
         DATABASE = os.path.join(app.instance_path, 'src.sqlite'),
         TEMPLATES_AUTO_RELOAD = True
